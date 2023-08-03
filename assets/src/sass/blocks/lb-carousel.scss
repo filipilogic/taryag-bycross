@@ -117,21 +117,21 @@
         right: 15%;
         cursor: pointer;
         z-index: 9;
-        background-image: url('https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/x.svg');
+        background-image: url('https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/x.svg');
         @include sm-desk-max {
             right: 20rem;
         }
     }
     .flickity-button.previous {
         right: 12.5%;
-        background-image: url('https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/left-arrow.svg');
+        background-image: url('https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/left-arrow.svg');
         @include sm-desk-max {
             right: 15rem;
         }
     }
     .flickity-button.next {
         right: 10%;
-        background-image: url('https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/right-arrow.svg');
+        background-image: url('https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/right-arrow.svg');
         @include sm-desk-max {
             right: 10rem;
         }

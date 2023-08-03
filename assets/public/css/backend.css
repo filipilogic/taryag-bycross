@@ -377,7 +377,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 .il_columns.style-1:before {
   content: "";
-  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/line-yellow.svg");
+  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/public/images/line-yellow.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -394,7 +394,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 .il_columns.style-1:after {
   content: "";
-  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/red-yellow-line.svg");
+  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/public/images/red-yellow-line.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -573,7 +573,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 .il_contact-us .title-style-2:after {
   content: "";
-  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/big-right-arrow.svg");
+  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/big-right-arrow.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -883,7 +883,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   right: 15%;
   cursor: pointer;
   z-index: 9;
-  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/x.svg");
+  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/x.svg");
 }
 @media (max-width: 1360.5px) {
   .il_lb_carousel_wrap .close {
@@ -892,7 +892,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 .il_lb_carousel_wrap .flickity-button.previous {
   right: 12.5%;
-  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/left-arrow.svg");
+  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/left-arrow.svg");
 }
 @media (max-width: 1360.5px) {
   .il_lb_carousel_wrap .flickity-button.previous {
@@ -901,7 +901,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 .il_lb_carousel_wrap .flickity-button.next {
   right: 10%;
-  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/right-arrow.svg");
+  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/right-arrow.svg");
 }
 @media (max-width: 1360.5px) {
   .il_lb_carousel_wrap .flickity-button.next {
@@ -1247,7 +1247,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 .ol_section.packaging-validation-with-list ul li:before {
   content: "";
-  background: url("/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
+  background: url("/wp-content/themes/taryag-bycross/assets/icons/list-before-icon.svg");
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 2.4rem;
@@ -1902,7 +1902,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 .il_section.regulatory-compliance-section ul li:before {
   content: "";
-  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
+  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/list-before-icon.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 2.4rem;

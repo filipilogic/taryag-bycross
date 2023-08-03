@@ -238,11 +238,11 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   margin-right: 10px;
 }
 .nav-previous a {
-  background-image: url(https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/left-arrow.svg);
+  background-image: url(https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/left-arrow.svg);
 }
 
 .nav-next a {
-  background-image: url(https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/right-arrow.svg);
+  background-image: url(https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/right-arrow.svg);
 }
 
 .nav-previous, .nav-next {
@@ -1254,7 +1254,7 @@ figure img {
     content: "";
     width: 66px;
     height: 66px;
-    background-image: url(/wp-content/themes/taryag/assets/icons/chevron-right-dark.svg);
+    background-image: url(/wp-content/themes/taryag-bycross/assets/icons/chevron-right-dark.svg);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -1399,7 +1399,7 @@ figure img {
   }
   .header-version-1 .header-main-inner #primary-menu li.menu-item-has-children > a::after {
     content: "";
-    background-image: url(/wp-content/themes/taryag/assets/icons/chevron-right-dark.svg);
+    background-image: url(/wp-content/themes/taryag-bycross/assets/icons/chevron-right-dark.svg);
     background-repeat: no-repeat;
     background-position: center right;
     position: absolute;
@@ -3759,7 +3759,7 @@ textarea {
 }
 .il_columns.style-1:before {
   content: "";
-  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/line-yellow.svg");
+  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/public/images/line-yellow.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -3776,7 +3776,7 @@ textarea {
 }
 .il_columns.style-1:after {
   content: "";
-  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/red-yellow-line.svg");
+  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/public/images/red-yellow-line.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -3955,7 +3955,7 @@ textarea {
 }
 .il_contact-us .title-style-2:after {
   content: "";
-  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/big-right-arrow.svg");
+  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/big-right-arrow.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
@@ -4265,7 +4265,7 @@ textarea {
   right: 15%;
   cursor: pointer;
   z-index: 9;
-  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/x.svg");
+  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/x.svg");
 }
 @media (max-width: 1360.5px) {
   .il_lb_carousel_wrap .close {
@@ -4274,7 +4274,7 @@ textarea {
 }
 .il_lb_carousel_wrap .flickity-button.previous {
   right: 12.5%;
-  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/left-arrow.svg");
+  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/left-arrow.svg");
 }
 @media (max-width: 1360.5px) {
   .il_lb_carousel_wrap .flickity-button.previous {
@@ -4283,7 +4283,7 @@ textarea {
 }
 .il_lb_carousel_wrap .flickity-button.next {
   right: 10%;
-  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/right-arrow.svg");
+  background-image: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/right-arrow.svg");
 }
 @media (max-width: 1360.5px) {
   .il_lb_carousel_wrap .flickity-button.next {
@@ -4629,7 +4629,7 @@ textarea {
 }
 .ol_section.packaging-validation-with-list ul li:before {
   content: "";
-  background: url("/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
+  background: url("/wp-content/themes/taryag-bycross/assets/icons/list-before-icon.svg");
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 2.4rem;
@@ -5284,7 +5284,7 @@ textarea {
 }
 .il_section.regulatory-compliance-section ul li:before {
   content: "";
-  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
+  background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag-bycross/assets/icons/list-before-icon.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 2.4rem;
