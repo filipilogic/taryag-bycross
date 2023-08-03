@@ -1,0 +1,104 @@
+.il_block.il_simple-list {
+    @include desk-min {
+        padding-bottom: 8rem;
+    }
+    .il_block_intro {
+        margin-bottom: 6rem;
+    }
+    .intro_title {
+        margin-bottom: 1.5rem;
+    }
+    .il_block_intro .intro_text {
+        color: #fff;
+    }
+    .il_buttons {
+        @include desk-min {
+            margin-top: 1rem;
+        }
+        .il_btn {
+            display: inline-flex;
+            color: var(--color-2);
+            text-decoration: none;
+            border-radius: 3rem;
+            border: none;
+            path {
+            fill: var(--color-2);
+            }
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        @include desk-min {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+        li {
+            font-size: 2rem;
+            @include limbo-max {
+                font-size: 15px;
+            }
+            color: white;
+            font-weight: 700;
+            display: flex;
+            align-items: flex-start;
+            padding-bottom: 3rem;
+            @include mob-only {
+                padding-top: 2.5rem;
+                padding-bottom: 2.5rem;
+            }
+            @include tab-only {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            @include limbo-only {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            .il_list_item_text {
+                padding-left: 2rem;
+            }
+            .il_list_item_icon svg {    
+                width: 2.4rem;
+                height: 2.1rem;
+                margin-top: 0.5rem;
+                @include limbo-max {
+                    width: 3.5rem;
+                    height: 3rem;
+                }
+            }
+        }
+      }
+}
+
+.il_simple-list.mob-cols-1, .il_simple-list.tab-cols-2 {
+    .column {
+        margin-bottom: 0;
+    }
+}
+
+.il_simple-list.cols-2 {
+    .column {
+        max-width: 672px;
+    }
+}
+
+.il_simple-list.il_columns.cols-3 .column, .il_simple-list.il_columns.cols-4 .column {
+    padding-left: 0px;
+}
+
+.manufacturing-services {
+    @include desk-min {
+        ul li {    
+            padding-bottom: 4.5rem;
+        }
+    }
+}
+
+.il_simple-list.transportation-testing-standards {
+    @include tab-max {
+      padding-bottom: 15rem;
+    }
+  }

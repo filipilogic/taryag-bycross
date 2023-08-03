@@ -1,0 +1,16 @@
+{
+    "name": "acf/our-clients",
+    "title": "iLogic Our Clients",
+    "description": "Our clients with logos. 6 images per column",
+    "category": "ilogic-category",
+    "icon": "columns",
+    "keywords": ["our clients", "ilogic"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "our-clients.php"
+    },
+    "supports": {
+		"align": false,
+		"anchor": true
+	}
+}

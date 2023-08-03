@@ -1,0 +1,230 @@
+.il_columns {
+  .il_columns_inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@include desk-min {
+  .il_columns.cols-3 .column {
+    padding-left: 2%;
+    padding-bottom: 2%;
+  }
+  .il_columns.cols-3 .column:last-child {
+    padding-right: 2%;
+  }
+  .il_columns.cols-4 .column {
+    padding-left: 2.33%;
+    padding-right: 1%;
+    padding-bottom: 1.33%;
+  }
+  .il_columns.cols-4 .column:last-child {
+    padding-right: 1.33%;
+  }
+}
+
+.il_columns.style-1 {
+  .container {
+    text-align: center;
+    color: #fff;
+  }
+  .il_block_intro {
+    margin-bottom: 7rem;
+  }
+  .il_block_intro .intro_title {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tab-max {
+      padding: 3.8rem 0;
+    }
+  }
+  @include desk-min {
+    .column:not(:first-child) {
+      border-left: 1px solid rgb(255 255 255 / 25%);
+    }
+  }
+  .il_btn_text {
+    color: var(--color-2);
+  }
+  .il_btn_icon path {
+    fill: var(--color-2);
+  }
+  .column img {
+    margin-bottom: 2.5rem;
+    @include md-desk-max {
+      max-width: 60px;
+    }
+  }
+  .column:has(.il_buttons) .il_col_text {
+    margin-bottom: 1rem;
+  }
+  .il_buttons {
+    margin-top: auto;
+  }
+  &:before {
+    content: "";
+    background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/line-yellow.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    margin-top: -6rem;
+    z-index: -1;
+    @include mob-only {
+      margin-top: -8rem;
+    }
+  }
+  &:after {
+    content: "";
+    background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/public/images/red-yellow-line.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 19rem;
+    height: 15rem;
+    right: 0px;
+    z-index: -1;
+  }
+  
+  &.why-choose-taryag-image-left {
+    @include limbo-min {
+      &.cols-2 .column {
+        width: 48%;
+      }
+      &.cols-2 .column:nth-child(2n+1) {
+        margin-right: 3%;
+      }
+    }
+    .il_columns_inner {
+      max-width: 1360px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .column {
+      flex-direction: row;
+      img {
+        margin-bottom: 0;
+        margin-right: 3rem;
+      }
+      .il_col_text {
+        text-align: left;
+        font-weight: 500;
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    .column:not(:first-child) {
+      border: 0;
+    }
+  }
+}
+
+.il_columns.flexible-cleanroom {
+  @include desk-min {
+    .il_columns_inner {
+      justify-content: center;
+    }
+  }
+  .column {
+    @include desk-min {
+      padding-left: 2%;
+      width: 37%;
+    }
+    .intro_title {
+      color: var(--color-3);
+      @include limbo-max {
+        margin-bottom: 3rem;
+      }
+      @include desk-min {
+        margin-bottom: 1.2rem;
+      }
+      @include md-desk-max {
+        font-size: 4rem;
+      }
+      @include lg-desk-min {
+        font-size: 2.5rem;
+      }
+    }
+    .il_col_text {
+      font-weight: 500;
+    }
+  }
+}
+
+.il_columns.taryag-cleanrooms {
+  margin-top: -3.5rem;
+  @include desk-min {
+    padding-bottom: 8rem;
+  }
+  .il_block_bg {
+    margin-top: 3.5rem;
+  }
+  .container {
+    background: #fff;
+    padding: var(--b-space-2);
+    @include mob-only {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+    @include limbo-only {
+      padding-left: 10rem;
+      padding-right: 10rem;
+    }
+  }
+  .il_block_intro .intro_title {
+    margin-bottom: 7rem;
+  }
+  &.cols-2 .column {
+    display: flex;
+    flex-wrap: wrap;
+    &:not(:last-child) {
+      margin-bottom: 6rem;
+      @include tab-max {
+        margin-bottom: 7rem;
+      }
+    }
+    .intro_title {
+        color: #F21971;
+        width: 75%;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 2rem;
+        @include mob-only {
+          font-size: 4rem;
+        }
+        @include tab-only {
+          font-size: 3.5rem;
+        }
+        @include limbo-only {
+          font-size: 3.3rem;
+        }
+        @include desk-min {
+          font-size: 2.6rem;
+        }
+      }
+      .il_col_text {
+        margin-top: 2rem;
+        color: var(--color-1);
+        @include limbo-max {
+          margin-top: 4rem;
+        }
+      }
+    }
+  @include limbo-min {
+    &.cols-2 .column {
+      width: 43%;
+    }
+    &.cols-2 .column:nth-child(2n+1) {
+      margin-right: 7%;
+    }
+  }
+}

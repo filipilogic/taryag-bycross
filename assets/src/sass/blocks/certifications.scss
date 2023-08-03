@@ -1,0 +1,114 @@
+.il_block.il_certifications {
+  a {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .container {
+    text-align: center;
+    max-width: 1000px;
+  }
+  .il_certifications_inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .il_block_intro {
+    margin-bottom: 7rem;
+    color: #041B4F;
+  }
+  .il_block_intro .intro_title {
+    margin-bottom: 2.5rem;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tab-max {
+      padding: 3.8rem 0;
+    }
+  }
+  .cert-comp-top {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    border-top: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+    border-left: 1px solid #c3c3c3;
+    border-radius: 12px 12px 0 0;
+    @include tab-min {
+      padding: 1.6rem 2rem;
+    }
+    img {
+      margin-right: 2rem;
+    }
+    .intro_title {
+      text-align: left;
+      margin-bottom: 0rem;
+      font-size: 26px;
+      @include mob-only {
+        font-size: 24px;
+      }
+      @include tab-only {
+        font-size: 22px;
+      }
+      @include limbo-only {
+        font-size: 22px;
+      }
+    }
+  }
+  .cert-comp-bottom {
+    padding: 8px 20px;
+    border-radius: 0 0 12px 12px;
+    text-align: left;
+    color: #fff;
+    height: 100%;
+    min-height: 55px;
+    @include tab-min {
+      padding: 7px 2rem;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  &:before {
+    content: "";
+    background: url("/wp-content/uploads/2023/06/Mask-Group-2871.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 24.6rem;
+    height: 26.4rem;
+    top: 0;
+    z-index: -1;
+  }
+  &:after {
+    content: "";
+    background: url("/wp-content/uploads/2023/06/Mask-Group-2872.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    width: 15.7rem;
+    height: 16.9rem;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+@include mob-only {
+  .il_block.il_certifications.mob-cols-1 .column {
+    margin-bottom: 2%;
+  }
+}
+
+@include desk-min {
+  .il_block.il_certifications.cols-3 .column {
+    width: 30.3%;
+    margin-right: 3%;
+    margin-bottom: 6%;
+  }
+}
+

@@ -1,0 +1,29 @@
+.il_contact-us {
+    a {
+        display: flex;
+        padding: 4rem 0;
+        text-decoration: none;
+    }
+    .title-style-2 {
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:after {   
+            content: "";
+            background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/big-right-arrow.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: block;
+            position: relative;
+            width: 3.7rem;
+            height: 5.7rem;
+            margin-left: 4.5rem;
+            transition: var(--theme-transition);
+        }
+    }
+    &:hover .title-style-2:after {
+        margin-left: 5.5rem;
+        margin-right: -1rem;
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "acf/certifications",
+    "title": "iLogic Certifications",
+    "description": "Certifications Block",
+    "category": "ilogic-category",
+    "icon": "columns",
+    "keywords": ["certifications", "ilogic"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "certifications.php"
+    },
+    "supports": {
+		"align": false,
+		"anchor": true
+	}
+}

@@ -1,0 +1,16 @@
+{
+    "name": "acf/olsec",
+    "title": "Overlapping Section",
+    "description": "Overlapping Section with text, image and button",
+    "category": "ilogic-category",
+    "icon": "welcome-widgets-menus",
+    "keywords": ["overlapping", "ilogic", "taryag"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "olsec.php"
+    },
+    "supports": {
+		"align": false,
+		"anchor": true
+	}
+}

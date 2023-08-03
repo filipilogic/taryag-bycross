@@ -1,0 +1,16 @@
+{
+    "name": "acf/simple-list",
+    "title": "iLogic Simple List",
+    "description": "A Simple List block",
+    "category": "ilogic-category",
+    "icon": "images-alt",
+    "keywords": ["simple list", "ilogic"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "simple-list.php"
+    },
+    "supports": {
+		"align": false,
+		"anchor": true
+	}
+}

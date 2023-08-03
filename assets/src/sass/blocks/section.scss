@@ -1,0 +1,617 @@
+.tg_btns_wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 4.5rem;
+  flex-wrap: wrap;
+  .tg_buttons_prefix {
+    font-size: 2rem;
+    margin-right: 4rem;
+  }
+  .il_buttons {
+    margin-top: 0;
+    @include tab-max {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @include limbo-min {
+      a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
+        margin-right: 2.5rem;
+      }
+    }
+  }
+  @include limbo-max {
+    flex-direction: column;
+    align-items: flex-start;
+    .tg_buttons_prefix {
+      font-size: 16px;
+      margin: 3rem 4rem 0 0;
+    }
+    a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
+      margin: 3rem 5.5rem 0rem 0rem;
+    }
+  }
+}
+
+.il_section.style-1 {
+  background-color: #f5f5f5;
+  .tg_buttons_prefix {
+    color: var(--color-1)
+  }
+  @include tab-max {
+    padding-bottom: 26rem;
+  }
+  .il_block_bg {
+    @include limbo-min {
+      width: var(--site-width);
+      img {
+        width: 30%;
+
+      }
+    }
+    @include tab-max {
+      img {
+        width: fit-content;
+        height: 79rem;
+        top: auto;
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+  }
+  .il_section_title {
+    color: var(--color-1);
+  }
+  .il_section_content {
+   @include limbo-min {
+    width: 65%;
+    margin-left: auto;
+    margin-right: 8%;
+   }
+  }
+  .il_section_text {
+    color: var(--color-text);
+    margin-bottom: 3rem;
+    h3 {
+      font-size: 4rem;
+    }
+  }
+  .il_btn {
+    display: inline-flex;
+    color: var(--color-2);
+    text-decoration: none;
+    border-radius: 3rem;
+    border: none;
+    path {
+      fill: var(--color-2);
+    }
+  }
+  @include limbo-min {
+    &:not(.packages-materials-section):not(.pack-int-appr):not(.pack-visual-insc)::after {
+      content: "";
+      background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/The-Taryag-Integrated-Approach-RIGHT-ELEMENT.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      width: 42.9rem;
+      height: 43.1rem;
+      right: 0px;
+      bottom: 0px;
+      z-index: -1;
+    }
+  }
+  &.hp-sec-z-index-change {
+    @include tab-max {
+      padding-top: 13rem;
+    }
+  }
+  &.pack-int-appr {
+    background-color: #fff;
+  }
+  @include limbo-min {
+    &.pack-visual-insc {
+      padding-top: 10rem;
+      padding-bottom: 7rem;
+      .il_block_bg img {
+        width: 65%;
+        object-position: top right;
+      }
+      .il_section_content {
+        width: 50%;
+        margin-right: 0;
+      }
+    }
+  }
+  @include lg-desk-min {
+    &.pack-visual-insc {
+      .il_block_bg img {
+        width: 60%;
+      }
+    }
+  }
+}
+
+.il_section.style-2 {
+  background-color: var(--color-1);
+  .tg_buttons_prefix {
+    color: #fff;
+  }
+  @include tab-max {
+    padding-bottom: 26rem;
+    ul {
+      padding: 0;
+      margin: 0 0 1.5em 2em;
+    }
+  }
+  .il_block_bg {
+    @include limbo-min {
+      width: var(--site-width);
+      margin-right: 0;
+      margin-left: auto;
+      img {
+        width: 55%;
+        right: 0;
+        left: auto;
+      }
+    }
+    @include tab-max {
+      img {
+        width: fit-content;
+        height: 58rem;
+        top: auto;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    @include limbo-only {
+      img {
+        object-position: left;
+      }
+    }
+  }
+  .il_section_content {
+   @include limbo-min {
+    width: 50%;
+   }
+   @include tab-max {
+    width: 100%;
+   }
+  }
+  .il_section_title {
+    color: #fff;
+  }
+  .il_section_text {
+    color: #fff;
+  }
+  .il_btn {
+    color: var(--color-2);
+  }
+  li {
+      font-size: 2rem;
+      color: #fff;
+      @include limbo-max {
+          font-size: 15px;
+      }
+      &::marker {
+          color: #FEC000;
+      }
+  }
+  &.hp-about-us {
+    @include limbo-min {
+      .il_block_bg img {
+        width: 42%;
+        object-position: left;
+      }
+      .il_section_content {
+        width: 67%;
+      }
+    }
+  }
+}
+
+.il_section.sterile-barrier {
+  background: linear-gradient(270deg, #062366 0%, #010d28 100%);
+  @include tab-max {
+    padding-bottom: 19rem;
+  }
+  .il_block_bg {
+    @include limbo-min {
+      img {
+        width: 25%;
+        right: 0;
+        left: auto;
+      }
+    }
+    @include tab-max {
+      img {
+        display: none;
+      }
+    }
+  }
+  .il_section_content {
+    @include limbo-min {
+      width: 75%;
+    }
+    .il_section_text {
+      color: #fff;
+    }
+  }
+  @include limbo-min {
+    &:before {
+      content: "";
+      background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/New-MM-left-top-1.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      width: 27.1rem;
+      height: 32.2rem;
+      top: 0px;
+      z-index: -1;
+    }
+  }
+}
+
+.il_section.peel-strength-test {
+  padding-bottom: var(--b-space-1) !important;
+  @include tab-max {
+    .il_block_bg img {
+        display: none;
+    }
+  }
+}
+
+.il_section_inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ol_section .il_section_inner {
+  @include limbo-max {
+    &.stack-tablet-reverse {
+      > div {
+        flex-basis: 100%;
+      }
+      .left {
+        order: 2;
+      }
+      .right {
+        order: 1;
+      }
+    }
+  }
+  @include tab-max {
+    &.stack-mobile-reverse {
+      > div {
+        flex-basis: 100%;
+      }
+      .left {
+        order: 2;
+      }
+      .right {
+        order: 1;
+      }
+    }
+  }
+  &.ib-right {
+    .left {
+      order: 2;
+    }
+    .right {
+      order: 1;
+    }
+   @include limbo-max {
+      &.stack-tablet-reverse {
+        > div {
+          flex-basis: 100%;
+        }
+        .left {
+          order: 1;
+        }
+        .right {
+          order: 2;
+        }
+      }
+    }
+    @include tab-max {
+      &.stack-mobile-reverse {
+        > div {
+          flex-basis: 100%;
+        }
+        .left {
+          order: 1;
+        }
+        .right {
+          order: 2;
+        }
+      }
+    }
+  }
+  &.stack-mobile {
+    @include tab-max {
+      > div {
+        flex-basis: 100%;
+      }
+    }
+  }
+  &.stack-tablet {
+    @include limbo-max {
+      > div {
+        flex-basis: 100%;
+      }
+    }
+  }
+}
+
+.il_section.our-story-hero-section {
+  .il_section_content {
+    @include mob-only {
+      padding-bottom: 24rem;
+    }
+    @include tab-only {
+      max-width: 70%;
+      padding-bottom: 10rem;
+    }
+    @include limbo-only {
+      max-width: 65%;
+      padding-bottom: 5rem;
+    }
+    @include desk-min {
+      max-width: 55%;
+    }
+  }
+  .il_section_title {
+    color: #FEC000;
+  }
+  .il_section_text {
+    color: var(--color-1);
+  }
+  .il_block_bg img {
+    width: 50%;
+    left: auto;
+    right: 0px !important;
+    @include tab-max {
+      width: 100%;
+      height: 35rem;
+      bottom: 0;
+      object-fit: contain;
+      object-position: bottom right;
+    }
+    @include limbo-only {
+      width: 40%;
+      height: auto;
+      bottom: 0;
+    }
+  }
+}
+
+.il_section.vision-mission-section {
+  @include tab-max {
+    padding-top: 58rem;
+    padding-bottom: var(--b-space-2);
+  }
+  .il_block_bg {
+    img {
+      @include tab-max {
+        height: 50rem;
+        top: 0;
+        bottom: auto;
+      }
+      @include limbo-only {
+        width: 49%;
+      }
+      @include desk-min {
+        width: 45%;
+        top: calc(-1 * var(--b-space-1));
+      }
+    }
+    @include limbo-min {
+      width: var(--site-width);
+      max-width: var(--site-max-width);
+    }
+    @include desk-min {
+      margin: auto;
+    }
+  }
+  .il_section_title {
+    color: var(--color-1);
+  }
+  .il_section_content {
+   @include limbo-min {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0%;
+   }
+  }
+  .il_section_text {
+    color: var(--color-text);
+  }
+}
+
+.il_section.packages-materials-section {
+  background: linear-gradient(90deg, #062366 0%, #010d28 100%);
+  .il_section_title, .il_section_text {
+    color: #fff;
+  }
+  @include limbo-min {
+    &::after {
+      content: "";
+      background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/packages-top-right-element.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: block;
+      position: absolute;
+      width: 30.2rem;
+      height: 29rem;
+      right: 0px;
+      top: 0px;
+      z-index: -1;
+    }
+  }
+  @include tab-max {
+    .il_block_bg img {
+      height: 65rem;
+    }
+  }
+}
+
+.il_section.our-large-packages-section {
+  .il_btn {
+    color: var(--color-2);
+    svg path {
+      fill: var(--color-2);
+    }
+  }
+}
+
+.il_section.large-package-production {
+  @include tab-max {
+    background: var(--color-1);
+    padding-bottom: 31rem !important;
+  }
+  .il_block_bg {
+    width: 100%;
+  }
+  .il_section_title, .il_section_text {
+    color: var(--color-1);
+  }
+  a.il_btn {
+      color: var(--color-2);
+  }
+  a.il_btn svg path {
+      fill: var(--color-2);
+  }
+}
+
+.il_section.large-package-production-white-text {
+  @include tab-max {
+    background: var(--color-1);
+    padding-bottom: 31rem !important;
+  }
+  .il_block_bg {
+    width: 100%;
+  }
+  .il_section_title, .il_section_text {
+    color: #fff ;
+  }
+}
+
+.il_section.regulatory-compliance-section {
+  background: linear-gradient(270deg, #062870 0%, #021031 100%);
+  ul {
+    margin: 0;
+    padding: 1rem 0;
+    @include mob-only {
+      padding: 3rem 0;
+    }
+    @include tab-only {
+      padding: 2rem 0;
+    }
+    @include limbo-only {
+      padding: 2rem 0;
+    }
+    list-style: none;
+    @include desk-min {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    li {
+      font-size: 2rem;
+      @include limbo-max {
+        font-size: 15px;
+      }
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      @include desk-min {
+        width: 50%;
+      }
+      &:before {
+        content: '';
+        background: url("https://taryag.ilogic-dev.net/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 2.4rem;
+        height: 2.1rem;
+        margin-right: 2rem;
+        z-index: -1;
+        @include limbo-max {
+          width: 3.5rem;
+          height: 3rem;
+        }
+      }
+      &:not(:last-child) {
+        padding-bottom: 4rem;
+      }
+    }
+  }
+  @include limbo-min {
+    .il_section_content {
+      width: 56%;
+    }
+    .il_block_bg img {
+      width: 44% !important;
+      object-position: left;
+    }
+  }
+}
+
+.il_section.newsletter-signup-section {
+  .newsletter-subtitle {
+    margin-bottom: 9rem;
+  }
+  @include desk-min {
+    .il_section_content .il_section_title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+  }
+  @include tab-max {
+    .il_section_content {
+      width: 100%;
+      .il_section_title {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  @include limbo-min {
+    text-align: center;
+    .il_section_inner {
+      justify-content: center;
+    }
+    &:before {
+        content: "";
+        background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/NEWSLETTER-LEFT.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        display: block;
+        position: absolute;
+        width: 45.3rem;
+        height: 100%;
+        top: 0;
+        z-index: -1;
+    }
+    &:after {
+        content: "";
+        background: url("https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/NEWSLWTTER-RIGHT.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        display: block;
+        position: absolute;
+        width: 45.3rem;
+        height: 100%;
+        top: 0;
+        right: 0px;
+        z-index: -1;
+    }
+  }
+}
+
+.hide-section {
+  display: none;
+}

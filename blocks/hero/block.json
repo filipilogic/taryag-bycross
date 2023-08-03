@@ -1,0 +1,15 @@
+{
+    "name": "acf/hero",
+    "title": "Taryag Home Hero",
+    "description": "Taryag Home Hero containing the Title, Subtitle, Buttons and slideIns.",
+    "category": "ilogic-category",
+    "icon": "image-rotate-right",
+    "keywords": ["hero", "taryag"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "hero.php"
+    },
+    "supports": {
+		"align": false
+	}
+}

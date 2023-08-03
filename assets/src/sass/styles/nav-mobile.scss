@@ -1,0 +1,166 @@
+// File location: assets\src\sass\styles
+
+
+@include limbo-max {
+    .header-top {
+        display: none;
+    }
+    .header-main {
+        top: 0;
+        background-color: #fff;
+        height: 105px;
+        background: linear-gradient( to left, #fff 0%, #e6e6e6 100%);
+        &.nav_open {
+            background: #fff;
+            position: sticky;
+        }
+        #primary-menu {
+            background: linear-gradient(#fff 0%, #e6e6e6 100%);
+        }
+    }
+    .header-main-inner {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .logo-wrap {
+        line-height: 0;
+        padding: 1rem 0;
+        a {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            img {
+                height: 100%;
+                max-height: 85px;
+                width: 100%;
+                object-fit: contain;
+                object-position: left;
+            }
+        }
+    }
+    .main-navigation {
+        ul {
+            display: none;
+        }
+    }
+    #primary-menu {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 105px);
+        overflow: auto;
+        background: #fff;
+        left: 0;
+        padding: 25px;
+        padding-bottom: 100px;
+        li {
+            a {
+                color: #041B4F;
+            }
+            > a {
+                padding: 18px 10px;
+                font-size: 20px;
+            }
+            &.current-menu-item {
+                a {
+                    color: #009688;
+                }
+            }
+            &.menu-item-has-children {
+                position: relative;
+                .sub-menu {
+                    display: none;
+                    a {
+                        font-size: 18px;
+                        padding: 10px 25px;
+                    }
+                    .sub-menu-trigger {
+                        width: 43px;
+                        height: 43px;
+                        right: -14px;
+                    }
+                    .sub-menu {
+                        a {
+                            padding: 10px 25px 10px 50px;
+                        }
+                    }
+                }
+                > .sub-menu-trigger {
+                    content: "";
+                    width: 66px;
+                    height: 66px;
+                    background-image: url(/wp-content/themes/taryag/assets/icons/chevron-right-dark.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: absolute;
+                    right: -25px;
+                    top: 0;
+                    z-index: 9;
+                    transition: var(--theme-transition);
+                }
+                &.sub-menu-open {
+                    > .sub-menu-trigger {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+    }
+    .nav-button {
+        display: none;
+    }
+    .menu-toggle {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        padding: 0;
+        margin-right: 0;
+        margin-left: auto;
+        outline: none;
+        height: 100%;
+        align-items: center;
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+        .line {
+            fill: none;
+            stroke-width: 6;
+            transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          .line1 {
+            stroke-dasharray: 60 207;
+            stroke-width: 6;
+            stroke: #0067A1;
+          }
+          .line2 {
+            stroke-dasharray: 60 60;
+            stroke-width: 6;
+            stroke: #05B0D6;
+          }
+          .line3 {
+            stroke-dasharray: 60 207;
+            stroke-width: 6;
+            stroke: #009688;
+          }
+        &.menu-opened {
+           .line1 {
+                stroke-dasharray: 90 207;
+                stroke-dashoffset: -134;
+                stroke-width: 6;
+            }
+            .line2 {
+                stroke-dasharray: 1 60;
+                stroke-dashoffset: -30;
+                stroke-width: 6;
+            }
+            .line3 {
+                stroke-dasharray: 90 207;
+                stroke-dashoffset: -134;
+                stroke-width: 6;
+            }
+        }
+    }
+
+}

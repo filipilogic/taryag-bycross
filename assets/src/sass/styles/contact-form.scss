@@ -1,0 +1,97 @@
+.wpcf7-form {
+    input:not(.wpcf7-submit), select, textarea {
+        border: 0px;
+        padding: 0 0 1.3rem 0;
+        border-bottom: 1px solid var(--color-1);
+        background: none;
+        border-radius: 0;
+    }
+    input:not(.wpcf7-submit):focus-visible, select:focus-visible, textarea:focus-visible {
+        outline: none;
+    }
+    input:not(.wpcf7-submit), select, textarea, input:not(.wpcf7-submit)::placeholder, select::placeholder, textarea::placeholder {
+        font-size: 2rem;
+        color: var(--color-1);
+        font-weight: 500;
+        @include limbo-max {
+            font-size: 16px;
+        }
+        @include mob-only {
+            font-size: 15px;
+        }
+    }
+    input.wpcf7-submit {
+        background: none;
+        color: var(--color-3);
+        border: 3px solid var(--color-3);
+        padding: 0.6em 1.2em;
+        font-weight: 500;
+        cursor: pointer;
+        transition: var(--theme-transition);
+        @include limbo-max {
+            font-size: 16px;
+        }
+        @include mob-only {
+            font-size: 15px;
+        }
+    }
+    input.wpcf7-submit:hover {
+        color: white;
+        border: 3px solid var(--color-1);
+        background: var(--color-1);
+    }
+    input[name="full-name"] {
+        appearance: none;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAYAAABCfffNAAAABHNCSVQICAgIfAhkiAAAAWJJREFUSEvtVLtRw0AQ3Q08gwMkhXKEXAIVYFcAHWA6OFWAqUDXAaYDUwFyB3RgE/lCSQRmIFjuzDD4I92uFTjBlyjZu6f32YdwhINHwIB/AlLFamTlvPVKilB0CNKu0YumOa9cFKmoOsMFIoReIIKnwGTuh2oP60nZUwoBMy4gSDQ8Nzqvm2NB3KUyTh2bCx8QAb2GS33ZGuQ9VgNCfOHYANFdYPRkd07ExF2qeunUfq4ZNkWwgj4WuticE4OsYpV8Ic45NkT0EBo9bgXy440aI+I9B9Qh6m9GWszEPSyPNOXWm+HvzxwO0oW5jXTk9YbgLTRZ0gqkitOJbTt/A6wpb6dMzERqPBDM7PYPWhkvibB7uG7zRUzEywjwHCyzm1bLaL3IrRdXh0ZXbPy67hEfOQDrRWMTs3KJypGgDD4o2a0TEROXqE+A0b7GuJUeQpraBtZNbFkmrEyCgROIQKS/kW8AHYcb7kitRwAAAABJRU5ErkJggg==);
+        background-size: 2.5rem;
+        background-position: top 0.2rem left;
+        background-repeat: no-repeat;
+        padding-left: 3.5rem;
+    }
+    input:not(.wpcf7-submit):focus, select:focus, textarea:focus {
+        appearance: none;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAYAAABCfffNAAAABHNCSVQICAgIfAhkiAAAAWJJREFUSEvtVLtRw0AQ3Q08gwMkhXKEXAIVYFcAHWA6OFWAqUDXAaYDUwFyB3RgE/lCSQRmIFjuzDD4I92uFTjBlyjZu6f32YdwhINHwIB/AlLFamTlvPVKilB0CNKu0YumOa9cFKmoOsMFIoReIIKnwGTuh2oP60nZUwoBMy4gSDQ8Nzqvm2NB3KUyTh2bCx8QAb2GS33ZGuQ9VgNCfOHYANFdYPRkd07ExF2qeunUfq4ZNkWwgj4WuticE4OsYpV8Ic45NkT0EBo9bgXy440aI+I9B9Qh6m9GWszEPSyPNOXWm+HvzxwO0oW5jXTk9YbgLTRZ0gqkitOJbTt/A6wpb6dMzERqPBDM7PYPWhkvibB7uG7zRUzEywjwHCyzm1bLaL3IrRdXh0ZXbPy67hEfOQDrRWMTs3KJypGgDD4o2a0TEROXqE+A0b7GuJUeQpraBtZNbFkmrEyCgROIQKS/kW8AHYcb7kitRwAAAABJRU5ErkJggg==) !important;
+        background-size: 2.5rem !important;
+        background-position: top 0.2rem left !important;
+        background-repeat: no-repeat !important;
+        padding-left: 3.5rem !important;
+    }
+    &:focus-within {
+        input[name="full-name"] {
+            background-image: none;
+            padding-left: 0;
+        }
+    }
+    select {
+        appearance: none;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAANCAYAAABCZ/VdAAAABHNCSVQICAgIfAhkiAAAAJ9JREFUOE+tlI0NQDAUhNsNbMIGVmEEI9iESTABoxjBnbRJQ39e1UuOpJHva+RarZQ6kB3pkT+mAmRBNo3HirTI9IPAghuwRsK5QEFdKHDBM1gd4ZxSwQtMqIWXCLzgJ/yLIAj2wXMEUXAILhEkwTF4TCACp+A+wYBFHhD2+K6baZv35bYl9J1b09PUNgmW7NwKXYEInAO3Ev4O3kWiuQAP/C0e18BfBAAAAABJRU5ErkJggg==);
+        background-size: 2.3rem;
+        background-position: 100%;
+        background-repeat: no-repeat;
+    }
+    option {
+        padding: 0;
+    }
+}
+
+.home-contact-us .wpcf7-form {
+    input:not(.wpcf7-submit), select, textarea {
+        border-bottom: 1px solid #fff;
+        width: 90%;
+        @include tab-max {
+            width: 100%;
+        }
+    }
+    input:not(.wpcf7-submit), select, textarea, input:not(.wpcf7-submit)::placeholder, select::placeholder, textarea::placeholder {
+        color: #fff;
+    }
+    input.wpcf7-submit {
+        color: #fff;
+        border: 3px solid var(--color-3);
+    }
+    input.wpcf7-submit:hover {
+        color: white;
+        border: 3px solid var(--color-1);
+        background: var(--color-3);
+    }
+}

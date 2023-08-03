@@ -1,0 +1,9 @@
+/**
+* Importing by glob example
+* https://github.com/maoberlehner/node-sass-magic-importer/tree/master/packages/node-sass-magic-importer#globbing
+ */
+
+@import 'template-style/**/*.scss';
+@import 'blocks/**/*.scss';
+@import 'styles/general.scss';
+@import 'styles/admin-styles.scss';

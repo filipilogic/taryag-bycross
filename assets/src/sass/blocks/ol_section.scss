@@ -1,0 +1,119 @@
+.ol_section {
+    z-index: 3;
+.il_block_bg {
+    margin-top: 14rem;
+    margin-bottom: 8.5rem;
+}
+.il_section_inner {
+    background-color: #fff;
+    margin-top: -14rem;
+    margin-bottom: -8.5rem;
+    .left {
+        flex: 60% 0 0;
+        padding: var(--b-space-2);
+    }
+    .right {
+        flex: 40% 0 0;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.il_btn {
+    color: var(--color-3);
+    svg {
+        path {
+            fill: var(--color-3);
+        }
+    }
+}
+
+}
+
+.ol_section.olsec-custom-margin {
+    ul {
+        padding-left: 0;
+        margin: 0 0 1.5em 2em;
+    }
+    li {
+        font-size: 2rem;
+        color: var(--color-1);
+        @include limbo-max {
+            font-size: 15px;
+        }
+        &::marker {
+            color: #24D4A6;
+        }
+    }
+    .il_section_inner {
+        margin-top: -10rem;
+        margin-bottom: 6rem;
+    }
+    .il_block_bg {
+        margin-top: 7rem;
+        margin-bottom: -6rem;
+    }
+}
+
+.ol_section.packaging-validation-with-list {
+    .right img {
+      width: 100%;
+    }
+    ul {
+        margin: 0;
+        padding: 1rem 0;
+        @include mob-only {
+          padding: 3rem 0;
+        }
+        @include tab-only {
+          padding: 2rem 0;
+        }
+        @include limbo-only {
+          padding: 2rem 0;
+        }
+        list-style: none;
+        @include desk-min {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        li {
+          padding-bottom: 4rem;
+          font-size: 2rem;
+          @include limbo-max {
+            font-size: 15px;
+          }
+          display: flex;
+          align-items: center;
+          @include desk-min {
+            width: 50%;
+          }
+          &:before {
+            content: '';
+            background: url("/wp-content/themes/taryag/assets/icons/list-before-icon.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-width: 2.4rem;
+            min-height: 2.1rem;
+            margin-right: 2rem;
+            @include limbo-max {
+              min-width: 3.5rem;
+              min-height: 3rem;
+            }
+          }
+        }
+      }
+      .il_buttons {
+          margin-top: 1rem;
+          .il_btn {
+              display: inline-flex;
+              color: var(--color-2);
+              text-decoration: none;
+              border-radius: 3rem;
+              border: none;
+              path {
+              fill: var(--color-2);
+              }
+          }
+      }
+}

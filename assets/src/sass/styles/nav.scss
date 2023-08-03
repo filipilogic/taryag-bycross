@@ -1,0 +1,174 @@
+// File location: assets\src\sass\styles
+.header-main {
+  z-index: 9;
+  border-bottom: 3px solid #041B4F;
+}
+@include desk-min {
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation {
+    ul {
+      display: flex;
+    }
+  }
+  .stick-top .header-version-1 {
+    .header-top {
+      position: sticky;
+      top: 0;
+    }
+  }
+  .stick-main .header-version-1 {
+    .header-main {
+      position: sticky;
+      top: 0;
+    }
+  }
+  .header-version-1 {
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--color-2);
+      padding: 1rem 2.5rem;
+      color: #fff;
+      z-index: 9;
+      .il_btn {
+        line-height: 1;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      div {
+        width: 100%;
+        text-align: center;
+      }
+      &.left {
+        .section_inner {
+          justify-content: left;
+        }
+      }
+      &.middle {
+        .section_inner {
+          justify-content: center;
+        }
+      }
+      &.right {
+        .section_inner {
+          justify-content: right;
+        }
+      }
+    }
+    .header-main {
+      background: linear-gradient( to left, #fff 0%, #e6e6e6 100%);
+      &-inner {
+        display: flex;
+        width: 90%;
+        max-width: 1600px;
+        margin: auto;
+        align-items: center;
+        padding: 4rem 0;
+        #primary-menu {
+          justify-content: flex-end;
+          a {
+            padding-left: 2.25rem;
+            color: #041B4F;
+            font-size: 18px;
+            font-weight: 500;
+          }
+          li {
+            > .sub-menu {
+              visibility: hidden;
+            }
+            &:hover {
+              > .sub-menu {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+            &.menu-item-has-children {
+                > a {
+                  padding-right: 3rem;
+                  display: flex;
+                  &::after {
+                    content: "";
+                    background-image: url(/wp-content/themes/taryag/assets/icons/chevron-right-dark.svg);
+                    background-repeat: no-repeat;
+                    background-position: center right;
+                    position: absolute;
+                    width: 20px;
+                    height: 100%;
+                    right: 0;
+                    transform: rotate(45deg);
+                    top: -3px;
+                    transition: var(--theme-transition);
+                  }
+                }
+                &:hover {
+                  > a:after {
+                    transform: rotate(90deg);
+                  }
+                }
+                & .menu-item-has-children {
+                  a {
+                    padding-right: 3.25rem;
+                    &:after {
+                      transform: rotate(0);
+                      margin-right: 3px;
+                    }
+                    &:hover:after {
+                      transform: rotate(45deg);
+                    }
+                  }
+                }
+            }
+          }
+          li:not(:last-child) {
+            a {
+              padding-right: 2.25rem;
+            }
+          }
+          > li {
+            &.current-menu-item {
+              > a {
+                color: #009688;
+              }
+            }
+            .sub-menu {
+              flex-direction: column;
+              opacity: 0;
+              transition: var(--theme-transition);
+              background: linear-gradient(270deg, #fff 0%, #e6e6e6 100%);
+              padding: 2rem 1rem;
+              li {
+                margin-bottom: 1rem;
+                .sub-menu {
+                  left: calc(100% + 1rem);
+                  background: linear-gradient(270deg, #e6e6e6 0%, #fff 100%);
+                }
+              }
+            }
+          }
+        }
+        .logo-wrap {
+          flex: 15% 0 0;
+          line-height: 0;
+          height: 8rem;
+          a {
+            height: 100%;
+            img {
+              height: 100%;
+              object-fit: contain;
+              object-position: left;
+            }
+          }
+        }
+        .nav-button {
+          flex-shrink: 0;
+          margin-left: 3rem;
+          color: #fff;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

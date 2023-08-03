@@ -1,0 +1,16 @@
+{
+    "name": "acf/timeline",
+    "title": "Taryag Timeline",
+    "description": "A Timeline Block",
+    "category": "ilogic-category",
+    "icon": "editor-insertmore",
+    "keywords": ["timeline", "ilogic", "taryag"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "timeline.php"
+    },
+    "supports": {
+		"align": false,
+        "anchor": true
+	}
+}

@@ -1,0 +1,69 @@
+.mc4wp-form-fields {
+    @include limbo-min {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    input:not(.mc4wp_submit) {
+        border: 0px;
+        padding: 0 0 1.3rem 0;
+        border-bottom: 1px solid var(--color-1);
+        background: none;
+        border-radius: 0;
+        width: 100%;
+    }
+    input:not(.mc4wp_submit):focus-visible {
+        outline: none;
+    }
+    p:not(:last-child) {
+        @include limbo-min {
+            width: 30%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+    p:last-child {
+        margin-top: 8rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    input:not(.mc4wp_submit), input:not(.mc4wp_submit)::placeholder {
+        font-size: 2rem;
+        color: var(--color-1);
+        font-weight: 500;
+        @include limbo-max {
+            font-size: 16px;
+        }
+        @include mob-only {
+            font-size: 15px;
+        }
+    }
+    input.mc4wp_submit {
+        background: none;
+        color: #05B0D6;
+        border: 3px solid #05B0D6;
+        padding: 0.6em 1.2em;
+        font-weight: 500;
+        cursor: pointer;
+        transition: var(--theme-transition);
+        @include limbo-max {
+            font-size: 16px;
+        }
+        @include mob-only {
+            font-size: 15px;
+        }
+    }
+    input.mc4wp_submit:hover {
+        color: white;
+        border: 3px solid #F21971;
+        background: #F21971;
+    }
+    input:not(.mc4wp_submit) {
+        appearance: none;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAYAAABCfffNAAAABHNCSVQICAgIfAhkiAAAAWJJREFUSEvtVLtRw0AQ3Q08gwMkhXKEXAIVYFcAHWA6OFWAqUDXAaYDUwFyB3RgE/lCSQRmIFjuzDD4I92uFTjBlyjZu6f32YdwhINHwIB/AlLFamTlvPVKilB0CNKu0YumOa9cFKmoOsMFIoReIIKnwGTuh2oP60nZUwoBMy4gSDQ8Nzqvm2NB3KUyTh2bCx8QAb2GS33ZGuQ9VgNCfOHYANFdYPRkd07ExF2qeunUfq4ZNkWwgj4WuticE4OsYpV8Ic45NkT0EBo9bgXy440aI+I9B9Qh6m9GWszEPSyPNOXWm+HvzxwO0oW5jXTk9YbgLTRZ0gqkitOJbTt/A6wpb6dMzERqPBDM7PYPWhkvibB7uG7zRUzEywjwHCyzm1bLaL3IrRdXh0ZXbPy67hEfOQDrRWMTs3KJypGgDD4o2a0TEROXqE+A0b7GuJUeQpraBtZNbFkmrEyCgROIQKS/kW8AHYcb7kitRwAAAABJRU5ErkJggg==);
+        background-size: 2.5rem;
+        background-position: top 0.2rem left;
+        background-repeat: no-repeat;
+        padding-left: 3.5rem;
+    }
+}
