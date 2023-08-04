@@ -607,17 +607,19 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   background-size: cover;
   display: flex;
 }
-@media (min-width: 479.6px) and (max-width: 797.5px) {
-  .il_hero .desk_bg {
-    display: block;
-  }
-  .il_hero .mob_bg {
-    display: none;
-  }
+.il_hero .il_block_bg {
+  overflow: hidden;
+}
+.il_hero .il_block_bg video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .il_hero .il_hero_inner {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   position: relative;
   margin-bottom: 20rem;
 }
@@ -636,12 +638,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     margin-bottom: 20rem;
   }
 }
-@media (min-width: 479.6px) and (max-width: 797.5px) {
-  .il_hero .il_hero_inner {
-    margin-top: 9.8rem;
-  }
-}
-@media (max-width: 479.5px) {
+@media (max-width: 797.5px) {
   .il_hero .il_hero_inner {
     margin-top: 9.8rem;
     margin-bottom: 10rem;
@@ -656,7 +653,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 16.6rem;
+    margin-top: 4.6rem;
   }
   .il_hero .il_hero_inner .il_buttons .il_btn {
     font-size: 20px;
@@ -686,8 +683,8 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 }
 .il_hero .il_hero_inner .il_btn:first-child {
   color: #fff;
-  background-color: #0067A1;
-  border-color: #0067A1;
+  background-color: #009688;
+  border-color: #009688;
 }
 @media (min-width: 479.6px) {
   .il_hero .il_hero_inner .il_btn:first-child {
@@ -695,8 +692,9 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   }
 }
 .il_hero .il_hero_inner .il_btn:last-child {
-  color: #0067A1;
-  border-color: #0067A1;
+  color: #041B4F;
+  background: rgba(255, 255, 255, 0.58);
+  border-color: #009688;
 }
 @media (min-width: 1199.6px) {
   .il_hero .il_hero_inner .il_btn:last-child::after {
@@ -707,7 +705,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     height: calc(100% + 6px);
     pointer-events: none;
     opacity: 0;
-    background: linear-gradient(107.5deg, transparent 94.5%, #0067A1 94.5%);
+    background: linear-gradient(104deg, transparent 94%, #009688 94%);
   }
 }
 @media (min-width: 1199.6px) {
@@ -726,23 +724,22 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   display: none;
 }
 .il_hero .intro_title {
-  font-size: 12.2rem;
+  font-size: 10rem;
   line-height: 1;
-  color: #683AB7;
+  color: #fff;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   margin-bottom: 0;
-  max-width: 67.3rem;
 }
 .il_hero .il_hero_subtitle {
-  font-size: 5rem;
-  color: var(--color-1);
-  font-family: Montserrat;
-  font-weight: 700;
-  max-width: 67.3rem;
+  font-size: 6rem;
+  color: #fff;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-weight: 400;
 }
-.il_hero .il_hero_content {
-  margin-top: 1rem;
-  color: var(--color-1);
-  max-width: 67.3rem;
+@media (max-width: 797.5px) {
+  .il_hero.full-screen {
+    min-height: calc(73vh - 16rem);
+  }
 }
 @media (min-width: 797.6px) and (max-width: 1199.5px) {
   .il_hero.full-screen {
@@ -1455,9 +1452,25 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
     z-index: -1;
   }
 }
+.il_section.style-1.hp-sec-z-index-change {
+  padding-top: 10.4rem;
+  padding-bottom: 10.4rem;
+}
 @media (max-width: 797.5px) {
   .il_section.style-1.hp-sec-z-index-change {
-    padding-top: 13rem;
+    padding-bottom: 26rem;
+  }
+}
+.il_section.style-1.hp-sec-z-index-change h2 {
+  margin-bottom: 3.2rem;
+}
+.il_section.style-1.hp-sec-z-index-change h3 {
+  font-size: 3.2rem;
+  font-family: Montserrat;
+}
+@media (max-width: 797.5px) {
+  .il_section.style-1.hp-sec-z-index-change h3 {
+    font-size: 20px;
   }
 }
 .il_section.style-1.pack-int-appr {
@@ -1987,6 +2000,12 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   display: none;
 }
 
+.il_section.home-contact-us {
+  padding-top: 11.2rem;
+  padding-bottom: 18.45rem;
+  background-color: #fff;
+}
+
 @media (min-width: 1199.6px) {
   .il_block.il_simple-list {
     padding-bottom: 8rem;
@@ -2092,6 +2111,10 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   }
 }
 
+.il_simple-list.transportation-testing-standards {
+  padding-top: 9.5rem;
+  padding-bottom: 4.5rem;
+}
 @media (max-width: 797.5px) {
   .il_simple-list.transportation-testing-standards {
     padding-bottom: 15rem;

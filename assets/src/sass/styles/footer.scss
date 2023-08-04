@@ -1,7 +1,7 @@
 .site-footer {
     .footer_main {
         padding-top: 6rem;
-        padding-bottom: 9rem;
+        padding-bottom: 6rem;
         background-color: #031133;
         .container {
             display: flex;
@@ -84,7 +84,8 @@
                 color: #fff;
                 text-decoration: none;
                 font-size: 18px;
-                color: rgba(255,255,255, .6);
+                color: #fff;
+                font-weight: 500;
             }
         }
     }
@@ -120,6 +121,8 @@
         p {
             margin-top: 2rem;
             margin-bottom: 2rem;
+            color: #0067A1;
+            font-weight: 500;
         }
     }
 }

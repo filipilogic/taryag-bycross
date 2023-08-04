@@ -121,6 +121,23 @@
             "endpoint": 0
         },
         {
+            "key": "field_64cce82b726bb",
+            "label": "Background Video URL",
+            "name": "background_video",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_63493bf422869",
             "label": "Height",
             "name": "height",
@@ -145,28 +162,6 @@
             "ui": 0,
             "ajax": 0,
             "placeholder": ""
-        },
-        {
-            "key": "field_649042ed2ec3f",
-            "label": "Background",
-            "name": "background",
-            "aria-label": "",
-            "type": "clone",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "clone": [
-                "group_634949d802e36"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 0
         }
     ],
     "location": [
@@ -187,5 +182,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687253308
+    "modified": 1691150477
 }

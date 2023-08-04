@@ -103,8 +103,20 @@
     }
   }
   &.hp-sec-z-index-change {
+    padding-top: 10.4rem;
+    padding-bottom: 10.4rem;
     @include tab-max {
-      padding-top: 13rem;
+      padding-bottom: 26rem;
+    }
+    h2 {
+      margin-bottom: 3.2rem;
+    }
+    h3 {
+      font-size: 3.2rem;
+      font-family: Montserrat;
+      @include tab-max {
+        font-size: 20px;
+      }
     }
   }
   &.pack-int-appr {
@@ -614,4 +626,10 @@
 
 .hide-section {
   display: none;
+}
+
+.il_section.home-contact-us {
+  padding-top: 11.2rem;
+  padding-bottom: 18.45rem;
+  background-color: #fff;
 }

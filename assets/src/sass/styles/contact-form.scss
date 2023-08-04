@@ -76,22 +76,9 @@
 
 .home-contact-us .wpcf7-form {
     input:not(.wpcf7-submit), select, textarea {
-        border-bottom: 1px solid #fff;
         width: 90%;
         @include tab-max {
             width: 100%;
         }
-    }
-    input:not(.wpcf7-submit), select, textarea, input:not(.wpcf7-submit)::placeholder, select::placeholder, textarea::placeholder {
-        color: #fff;
-    }
-    input.wpcf7-submit {
-        color: #fff;
-        border: 3px solid var(--color-3);
-    }
-    input.wpcf7-submit:hover {
-        color: white;
-        border: 3px solid var(--color-1);
-        background: var(--color-3);
     }
 }
