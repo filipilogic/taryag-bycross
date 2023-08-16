@@ -184,9 +184,6 @@ add_filter( 'block_categories_all', 'filter_block_categories_when_post_provided'
   /*
   * Action for load more posts
   */
-  
-add_action('wp_ajax_endorsement_load_more', 'endorsement_load_more');
-add_action('wp_ajax_nopriv_endorsement_load_more', 'endorsement_load_more');
 
 function endorsement_load_more() {
 	$countPosts = (isset($_GET['countPosts'])) ? $_GET['countPosts'] : 8;
@@ -194,7 +191,7 @@ function endorsement_load_more() {
 	$args = array(
 		'post_type' => 'endorsement',
 		'posts_per_page' => $countPosts,
-		'offset'          => 8
+		'offset' => 8,
 	);
 
 	$my_posts = new WP_Query($args);
@@ -202,15 +199,18 @@ function endorsement_load_more() {
 	$count_posts =  $my_posts->found_posts;
 	$postLimit = intval($countPosts) + 8;
 
-	if($postLimit >= intval($count_posts)){
+	if ( $postLimit >= intval($count_posts) ) {
 		echo '<style>.ilLoadMore{display:none !important;}</style>';
 	  }
 
 	 if ( $my_posts->have_posts() ) :
-        while ( $my_posts->have_posts() ) : $my_posts->the_post();
+        while ( $my_posts->have_posts() ) : 
+			
+			$my_posts->the_post();
 
-		$publication_or_endorsement_link = get_post_meta(get_the_ID(), 'publication_or_endorsement_link', true);
-		?>
+			$publication_or_endorsement_link = get_post_meta(get_the_ID(), 'publication_or_endorsement_link', true);
+			?>
+
 			<div class="il_endorsement">
 				<div class="il_pe_text">
 					<?php if (get_the_excerpt()) { ?>
@@ -221,10 +221,12 @@ function endorsement_load_more() {
 					<?php } ?>
 				</div>
 			</div>
-		<?
+		<?php
         endwhile;
     endif;
 
     wp_die();
 }
-
+  
+add_action('wp_ajax_endorsement_load_more', 'endorsement_load_more');
+add_action('wp_ajax_nopriv_endorsement_load_more', 'endorsement_load_more');
