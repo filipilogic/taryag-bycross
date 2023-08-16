@@ -186,10 +186,10 @@ jQuery(document).ready(function ($) {
 
     // AJAX Load More bttn
     $(document).on('click', '.ilLoadMore', function (e) {
-        e.preventDefault() //prevent default action
+        e.preventDefault();
 
         if (!window.countPosts) {
-          window.countPosts = 8
+          window.countPosts = 8;
         }
 	
         $.ajax({
@@ -201,9 +201,9 @@ jQuery(document).ready(function ($) {
           }
         }).done(function (resp) {
 			window.countPosts += 8
-			console.log(window.countPosts)
+
 			$('.il_endorsement_more').html(resp);
-		  })
+		  });
       });
 });
 
