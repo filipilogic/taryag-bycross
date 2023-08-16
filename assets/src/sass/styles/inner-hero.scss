@@ -155,6 +155,7 @@
 .contact-us-hero {
     .il_inner_hero_inner_bottom {
         .il_inner_hero_inner_bottom_content {
+            margin-top: -5rem;
             input:not(.wpcf7-submit), select, textarea {
                 width: 70%;
                 @include mob-only {
@@ -177,7 +178,7 @@
                 width: 70%;
             }
             @include desk-min {
-                width: 56%;
+                width: 55%;
             }
             .tg_title_1 {
                 margin-bottom: 6.5rem;
@@ -215,6 +216,88 @@
     @include mob-only {
         .il_buttons .il_btn_text {
             font-size: 14px;
+        }
+    }
+}
+
+.bycross-tech-hero {
+    .il_inner_hero_bg {
+        width: 42%;
+        height: fit-content;
+        left: auto;
+        @include tab-max {
+            img {
+                object-position: bottom;
+            }
+        }
+        @include limbo-only {
+            width: 41%;
+            top: 6rem;
+            right: -71px;
+        }
+    }
+    .il_inner_hero_inner {
+        .il_inner_hero_inner_top {
+            .il_block_bg img {
+                @include tab-max {
+                    object-position: bottom;
+                }
+            }
+        }
+        .il_inner_hero_inner_bottom {
+            @include tab-max {
+                margin-top: -10rem;
+                background: transparent;
+            }
+            .il_inner_hero_inner_bottom_content {
+                @include limbo-min {
+                    width: 88%;
+                    margin-top: -5rem;
+                }
+                .il_inner_hero_inner_bottom_text {
+                    @include limbo-min {
+                        p:first-child {
+                            max-width: 95.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.publications-and-endorsements-hero {
+    .il_inner_hero_inner_top .container {
+        @include mob-only {
+            padding: 8rem 0 32rem 0;
+            svg {
+                left: -22%;
+            }
+        }
+        @include md-desk-min {
+            padding: 8rem 0 25rem 0 !important;
+            .il_inner_hero_title {
+                margin-top: 2rem;
+            }
+        }
+    }
+    .il_inner_hero_inner_bottom {
+        margin-top: -5rem;
+        background: transparent;
+        @include tab-max {
+            padding-top: 0;
+            margin-top: -10rem;
+        }
+        @include mob-only {
+            margin-top: -15rem;
+        }
+        .il_inner_hero_inner_bottom_content {
+            .il_inner_hero_inner_bottom_title {
+                margin-bottom: 0;
+            }
+            @include limbo-only {
+                width: 88%;
+            }
         }
     }
 }

@@ -33,7 +33,7 @@ $class = 'il_top_bar_links';
 </div>
 <?php endif; ?>
 
-<div class="il_inner_hero">
+<div class="il_inner_hero <?php echo esc_html($custom_classes); ?>">
 <div class="il_inner_hero_bg">
 <?php
 
@@ -48,7 +48,7 @@ else {
 } ?>
 </div>
 
-	<div class="il_inner_hero_inner <?php echo esc_html($custom_classes); ?>">
+	<div class="il_inner_hero_inner">
 		<div class="il_inner_hero_inner_top">
 			<div class="il_block_bg">
 				<?php
@@ -101,13 +101,13 @@ else {
 				$title = get_sub_field('title');
 				$text = get_sub_field('text');
 
-				if( $title ):
+				if( $title || $text ):
 				?>
 				<div class="il_inner_hero_inner_bottom">
 					<div class="container">
 						<div class="il_inner_hero_inner_bottom_content">
 							<h2 class="il_inner_hero_inner_bottom_title tg_title_1"><?php echo $title; ?></h2>
-							<p class="il_inner_hero_inner_bottom_text"><?php echo $text ?></p>
+							<div class="il_inner_hero_inner_bottom_text"><?php echo $text; ?></div>
 							<?php get_template_part('components/buttons'); ?>
 						</div>
 					</div>

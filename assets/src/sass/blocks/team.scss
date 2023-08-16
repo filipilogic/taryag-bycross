@@ -1,6 +1,7 @@
 .il_block.team {
   padding-top: 0;
   padding-bottom: 5rem;
+  margin-top: -5rem;
   @include mob-only {
     padding-bottom: 0;
   }

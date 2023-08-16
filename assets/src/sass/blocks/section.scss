@@ -146,7 +146,7 @@
 }
 
 .il_section.style-2 {
-  background-color: var(--color-1);
+  background: linear-gradient(270deg, #062366 0%, #010d28 100%);
   .tg_buttons_prefix {
     color: #fff;
   }
@@ -166,6 +166,7 @@
         width: 55%;
         right: 0;
         left: auto;
+        object-position: left;
       }
     }
     @include tab-max {
@@ -210,14 +211,45 @@
           color: #FEC000;
       }
   }
-  &.hp-about-us {
+  &.solution-section {
+    padding-top: 9rem;
+    padding-bottom: 10.4rem;
+    overflow: hidden;
+    @include mob-only {
+      .il_buttons {
+        .il_btn:first-child {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    @include tab-only {
+      .il_block_bg img {
+        right: -8rem;
+      }
+    }
+    @include tab-max {
+      padding-bottom: 26rem;
+      .il_block_bg img {
+        right: -5rem;
+        object-fit: contain;
+        object-position: bottom right;
+      }
+    }
+    .il_section_content {
+      .solution-section-first {
+        margin-bottom: 5rem;
+      }
+    }
     @include limbo-min {
       .il_block_bg img {
-        width: 42%;
+        width: fit-content;
         object-position: left;
       }
       .il_section_content {
-        width: 67%;
+        width: 88%;
+        .solution-section-first {
+          width: 60%;
+        }
       }
     }
   }
@@ -631,5 +663,5 @@
 .il_section.home-contact-us {
   padding-top: 11.2rem;
   padding-bottom: 18.45rem;
-  background-color: #fff;
+  background: #fff;
 }

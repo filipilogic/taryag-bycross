@@ -29,7 +29,7 @@ get_header();
 								</g>
 							</g>
 							</svg>
-							<h1 class="il_inner_hero_title" style="color: var(--color-2);">Blog</span></h1>
+							<h1 class="il_inner_hero_title" style="color: var(--color-2);">PUBLICATIONS & ENDORSEMENTS</span></h1>
 						</div>
 					</div>
 				</div>

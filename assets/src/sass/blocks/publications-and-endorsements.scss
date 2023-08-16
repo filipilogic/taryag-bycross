@@ -1,0 +1,128 @@
+.il_publications-and-endorsements {
+    .il_publications {
+        .il_publication {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10.5rem;
+            border-bottom: 1px solid #707070;
+            @include mob-only {
+                margin-bottom: 11rem;
+            }
+           @include limbo-min {
+            .il_pe_left {
+                width: 50%;
+            }
+            .il_pe_right {
+                width: 45%;
+            }
+           }
+           @include tab-max {
+            flex-direction: column-reverse;
+            .il_pe_right {
+                margin-bottom: 6rem;
+            }
+           }
+            .il_pe_left {
+                display: flex;
+                flex-direction: column;
+                @include desk-min {
+                    padding-top: 2vh;
+                }
+                .il_pe_title {
+                    color: var(--color-1);
+                    h2 {
+                        margin-bottom: 3rem;
+                    }
+                }
+                .date {
+                    background-color: #F3F3F3;
+                    font-size: 16px;
+                    @include tab-max {
+                        font-size: 14px;
+                    }
+                    padding: 8px 13px;
+                    color: #151515;
+                    margin-bottom: 2rem;
+                    display: inline-block;
+                    width: fit-content;
+                }
+                .il_pe_text {
+                    color: var(--color-1);
+                    font-size: 2rem;
+                    @include mob-only {
+                        margin-top: 2rem;
+                    }
+                    margin-bottom: 2rem;
+                    @include limbo-max {
+                        font-size: 16px;
+                    }
+                }
+                .il_btn {
+                   margin: 3.5rem auto 0 0;
+                   @include tab-max {
+                    margin: 5rem auto 0 0;
+                   }
+                   color: var(--color-2);
+                    svg {
+                        path {
+                            fill: var(--color-2);
+                        }
+                    }
+                }
+            }
+            @include limbo-min {
+                .il_pe_right {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+
+    .il_endorsements {
+        padding-top: 10.5rem;
+        padding-bottom: 11.6rem;
+        @include desk-min {
+            background: url('/wp-content/uploads/2023/08/Artboard-5@2x.png');
+            background-repeat: no-repeat;
+            background-size: auto 110%;
+            background-position: top right;
+        }
+        .il_block_intro {
+            margin-bottom: 11.6rem;
+            .intro_title {
+                display: flex;
+                align-items: center;
+                line-height: 0;
+                &:before {
+                    content: '';
+                    background: url('/wp-content/uploads/2023/08/linkedin-2.png');
+                    background-size: cover;
+                    width: 5.4rem;
+                    height: 5.4rem;
+                    margin-right: 2rem;
+                }
+            }
+            .intro_text {
+                max-width: 100.29rem;
+            }
+        }
+        .il_endorsement {
+            max-width: 95rem;
+            padding-bottom: 2.5rem;
+            margin-bottom: 5.2rem;
+            border-bottom: 1px solid #CBCBCB;
+            a {
+                span {
+                    line-height: 0;
+                    margin-top: 5px;
+                    margin-right: 2rem;
+                }
+                display: flex;
+                text-decoration: none;
+                color: var(--color-1);
+            }
+        }
+    }
+}

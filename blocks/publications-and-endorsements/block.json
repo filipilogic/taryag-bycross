@@ -1,0 +1,15 @@
+{
+    "name": "acf/publications-and-endorsements",
+    "title": "iLogic Publications and Endorsements",
+    "description": "A Block for displaying last three posts",
+    "category": "ilogic-category",
+    "icon": "welcome-widgets-menus",
+    "keywords": ["publications-and-endorsements", "publications and endorsements", "ilogic"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "publications-and-endorsements.php"
+    },
+    "supports": {
+		"align": false
+	}
+}
