@@ -183,6 +183,29 @@ jQuery(document).ready(function ($) {
             scrollTop: member_view.offset().top
         }, 100);
     });
+
+    // AJAX Load More bttn
+	var page_num = 2;
+    $(document).on('click', '.ilLoadMore', function (e) {
+        e.preventDefault() //prevent default action
+
+        if (!window.countPosts) {
+          window.countPosts = 8
+        }
+	
+        $.ajax({
+		  type: 'GET',
+          url: '/wp-admin/admin-ajax.php',
+          data: {
+            countPosts: window.countPosts,
+            action: 'endorsement_load_more'
+          }
+        }).done(function (resp) {
+			window.countPosts += 8
+			console.log(window.countPosts)
+			$('.il_endorsement_more').html(resp);
+		  })
+      });
 });
 
 // Get the button

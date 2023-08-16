@@ -4896,7 +4896,7 @@ textarea {
   .il_publications-and-endorsements .il_endorsements {
     background: url("/wp-content/uploads/2023/08/Artboard-5@2x.png");
     background-repeat: no-repeat;
-    background-size: auto 110%;
+    background-size: 57.7rem auto;
     background-position: top right;
   }
 }
@@ -4934,6 +4934,9 @@ textarea {
   line-height: 0;
   margin-top: 5px;
   margin-right: 2rem;
+}
+.il_publications-and-endorsements .il_endorsements .ilLoadMore {
+  color: var(--color-2);
 }
 
 .tg_btns_wrap {

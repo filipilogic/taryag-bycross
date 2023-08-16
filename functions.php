@@ -180,3 +180,50 @@ function filter_block_categories_when_post_provided( $block_categories, $editor_
 }
 
 add_filter( 'block_categories_all', 'filter_block_categories_when_post_provided', 10, 2 );
+
+  /*
+  * Action for load more posts
+  */
+
+  function endorsement_load_more() {
+	$countPosts = (isset($_GET['countPosts'])) ? $_GET['countPosts'] : 8;
+
+	$args = array(
+		'post_type' => 'endorsement',
+		'posts_per_page' => $countPosts,
+		'offset'          => 8
+	);
+
+	$my_posts = new WP_Query($args);
+
+	$count_posts =  $my_posts->found_posts;
+	$postLimit = intval($countPosts) + 8;
+
+	if($postLimit >= intval($count_posts)){
+		echo '<style>.ilLoadMore{display:none !important;}</style>';
+	  }
+
+	 if ( $my_posts->have_posts() ) :
+        while ( $my_posts->have_posts() ) : $my_posts->the_post();
+
+		$publication_or_endorsement_link = get_post_meta(get_the_ID(), 'publication_or_endorsement_link', true);
+		?>
+			<div class="il_endorsement">
+				<div class="il_pe_text">
+					<?php if (get_the_excerpt()) { ?>
+							<a href="<?php echo $publication_or_endorsement_link; ?>"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20">
+									<path id="Path_246" data-name="Path 246" d="M6,0,0,10H11.958l6,10H18l6-10L18,0Z" transform="translate(0 0)" fill="#009688"/>
+									</svg>
+							</span><?php echo get_the_excerpt(); ?></a>
+					<?php } ?>
+				</div>
+			</div>
+		<?
+        endwhile;
+    endif;
+
+    wp_die();
+  }
+  
+  add_action('wp_ajax_endorsement_load_more', 'endorsement_load_more');
+  add_action('wp_ajax_nopriv_endorsement_load_more', 'endorsement_load_more');

@@ -86,7 +86,7 @@
         @include desk-min {
             background: url('/wp-content/uploads/2023/08/Artboard-5@2x.png');
             background-repeat: no-repeat;
-            background-size: auto 110%;
+            background-size: 57.7rem auto;
             background-position: top right;
         }
         .il_block_intro {
@@ -123,6 +123,9 @@
                 text-decoration: none;
                 color: var(--color-1);
             }
+        }
+        .ilLoadMore {
+            color: var(--color-2);
         }
     }
 }
