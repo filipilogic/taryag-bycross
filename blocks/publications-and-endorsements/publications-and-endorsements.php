@@ -90,10 +90,7 @@ if ( ! empty( $padding) ) {
                             <div class="il_endorsement">
                                 <div class="il_pe_text">
                                     <?php if (get_the_excerpt()) { ?>
-                                        <a href="<?php echo $publication_or_endorsement_link; ?>"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20">
-                                        <path id="Path_246" data-name="Path 246" d="M6,0,0,10H11.958l6,10H18l6-10L18,0Z" transform="translate(0 0)" fill="#009688"/>
-                                    </svg>
-                                    </span><?php echo get_the_excerpt(); ?></a>
+                                        <a href="<?php echo $publication_or_endorsement_link; ?>"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20"><path id="Path_246" data-name="Path 246" d="M6,0,0,10H11.958l6,10H18l6-10L18,0Z" transform="translate(0 0)" fill="#009688"/></svg></span><?php echo get_the_excerpt(); ?></a>
                                     <?php } ?>
                                 </div>
                             </div>

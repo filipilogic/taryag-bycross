@@ -184,8 +184,11 @@ add_filter( 'block_categories_all', 'filter_block_categories_when_post_provided'
   /*
   * Action for load more posts
   */
+  
+add_action('wp_ajax_endorsement_load_more', 'endorsement_load_more');
+add_action('wp_ajax_nopriv_endorsement_load_more', 'endorsement_load_more');
 
-  function endorsement_load_more() {
+function endorsement_load_more() {
 	$countPosts = (isset($_GET['countPosts'])) ? $_GET['countPosts'] : 8;
 
 	$args = array(
@@ -223,7 +226,5 @@ add_filter( 'block_categories_all', 'filter_block_categories_when_post_provided'
     endif;
 
     wp_die();
-  }
-  
-  add_action('wp_ajax_endorsement_load_more', 'endorsement_load_more');
-  add_action('wp_ajax_nopriv_endorsement_load_more', 'endorsement_load_more');
+}
+

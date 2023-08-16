@@ -182,7 +182,6 @@ jQuery(document).ready(function ($) {
   });
 
   // AJAX Load More bttn
-  var page_num = 2;
   $(document).on('click', '.ilLoadMore', function (e) {
     e.preventDefault(); //prevent default action
 
