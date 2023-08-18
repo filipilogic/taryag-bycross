@@ -115,6 +115,24 @@
   .member_text {
     position: relative;
     display: none;
+    .member_box_name {
+      color: var(--color-2);
+      span {
+        color: #fff;
+      }
+      @include tab-max {
+        display: flex;
+        flex-direction: column;
+        span {
+          font-size: 18px;
+          line-height: 26px;
+          text-transform: none;
+          margin-top: 8px;
+          font-weight: 500;
+          font-family: Montserrat;
+        }
+      }
+    }
     @include desk-min {
       background-image: url('https://taryag.ilogic-dev.net/wp-content/uploads/2022/12/red-yellow-line.svg');
       background-repeat: no-repeat;

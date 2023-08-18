@@ -61,6 +61,7 @@
                     "collapsed": "",
                     "button_label": "Add Member",
                     "rows_per_page": 20,
+                    "parent_repeater": "field_63a4248b78022",
                     "sub_fields": [
                         {
                             "key": "field_634fd3d718d4c",
@@ -81,7 +82,7 @@
                             "min_width": "",
                             "min_height": "",
                             "min_size": "",
-                            "max_width": 33,
+                            "max_width": "",
                             "max_height": "",
                             "max_size": "",
                             "mime_types": "",
@@ -151,8 +152,7 @@
                             "toolbar": "full",
                             "parent_repeater": "field_634fd34b18d48"
                         }
-                    ],
-                    "parent_repeater": "field_63a4248b78022"
+                    ]
                 }
             ]
         },
@@ -236,5 +236,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671728362
+    "modified": 1692304832
 }

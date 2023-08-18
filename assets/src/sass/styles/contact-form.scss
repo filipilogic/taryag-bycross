@@ -24,6 +24,7 @@
         background: none;
         color: var(--color-3);
         border: 3px solid var(--color-3);
+        border-radius: 0;
         padding: 0.6em 1.2em;
         font-weight: 500;
         cursor: pointer;
@@ -79,6 +80,12 @@
         width: 90%;
         @include tab-max {
             width: 100%;
+        }
+    }
+    input.wpcf7-submit {
+        color: var(--color-1);
+        &:hover {
+            color: #fff;
         }
     }
 }

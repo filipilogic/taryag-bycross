@@ -239,6 +239,10 @@
     .il_inner_hero_inner {
         .il_inner_hero_inner_top {
             .il_block_bg img {
+                @include tab-only {
+                    width: auto;
+                    right: 5rem;
+                }
                 @include tab-max {
                     object-position: bottom;
                 }
@@ -246,8 +250,12 @@
         }
         .il_inner_hero_inner_bottom {
             @include tab-max {
-                margin-top: -10rem;
+                padding-top: 0;
+                margin-top: -3rem;
                 background: transparent;
+            }
+            @include tab-only {
+                margin-top: -5rem;
             }
             .il_inner_hero_inner_bottom_content {
                 @include limbo-min {

@@ -86,6 +86,11 @@
     path {
       fill: var(--color-2);
     }
+    @include mob-only {
+      &:first-child {
+        margin-bottom: 2rem;
+      }
+    }
   }
   @include limbo-min {
     &:not(.packages-materials-section):not(.pack-int-appr):not(.pack-visual-insc)::after {
@@ -172,7 +177,7 @@
     @include tab-max {
       img {
         width: fit-content;
-        height: 58rem;
+        height: 44rem;
         top: auto;
         bottom: 0;
         right: 0;

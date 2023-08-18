@@ -6,38 +6,20 @@
         .container {
             display: flex;
             align-items: center;
-            @include tab-max {
+            @include limbo-max {
                 flex-wrap: wrap;
                 justify-content: space-between;
             }
         }
-        @include tab-max {
+        @include limbo-max {
             padding-top: 4rem;
             padding-bottom: 4rem;
-            @include tab-only {
-                padding-top: 3rem;
-            }
-            .menu-footer-menu-container {
-                li {
-                    text-align: left !important;
-                    width: 50%;
-                    margin-left: 0 !important;
-                    padding-bottom: 2rem;
-                    a {
-                        font-size: 16px !important;
-                    }
-                }
-            }
         }
-        @include limbo-max {
-            .menu-footer-menu-container {
-                width: 63%;
-            }
+        @include tab-only {
+            padding-top: 3rem;
         }
         @include mob-only {
-            .menu-footer-menu-container {
-                width: 80%;
-            }
+            padding-top: 6rem;
         }
     }
     .footer_logo {
@@ -46,13 +28,18 @@
             width: auto;
             max-height: 6rem;
         }
-        @include tab-max {
+        @include limbo-max {
             width: 100%;
-            max-height: 7rem;
             margin-bottom: 4rem;
+        }
+        @include tab-max {
+            max-height: 7rem;
             img {
                 max-height: 7rem;
             }
+        }
+        @include mob-only {
+            text-align: center;
         }
     }
     #footer.menu {
@@ -60,25 +47,6 @@
         list-style: none;
         margin: 0;
         flex-wrap: wrap;
-        @include tab-max {
-            padding-left: 0px;
-        }
-        @include tab-min {
-            margin-right: 6rem;
-            li {
-                margin-left: 4rem;
-            }
-        }
-        @include mob-only {
-            margin-top: 2rem;
-            margin-bottom: 3rem;
-            padding: 0;
-            li {
-                margin-left: 0;
-                text-align: center;
-            }
-        }
-
         li {
             a {
                 color: #fff;
@@ -87,6 +55,29 @@
                 color: #fff;
                 font-weight: 500;
             }
+            @include desk-min {
+                margin-left: 4rem;
+            }
+            @include limbo-max {
+                text-align: left;
+                width: 33%;
+                padding-bottom: 2rem;
+                a {
+                    font-size: 16px !important;
+                }
+            }
+            @include mob-only {
+                text-align: center;
+                width: 100%;
+                padding-bottom: 2.5rem;
+            }
+        }
+        @include limbo-max {
+            padding-left: 0;
+        }
+        @include mob-only {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
         }
     }
     .footer-icons {

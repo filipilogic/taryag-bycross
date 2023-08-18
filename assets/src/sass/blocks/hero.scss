@@ -32,76 +32,91 @@
     }
     .il_buttons {
       margin-top: 5rem;
+      display: flex;
       @include mob-only {
-          display: flex;
           flex-direction: column;
           align-items: center;
           width: 100%;
           margin-top: 4.6rem;
-          .il_btn{
-            font-size: 20px;
-            min-width: 100%;
-            padding: 10px 4rem;
-            text-align: center;
-            display: inline-block;
-            margin: 0 auto 0 0;
-            &:first-child {
-              margin-bottom: 10px;
+        }
+      .il_btn {
+        padding: 1rem 2.2rem;
+        border: 3px solid;
+        font-size: 2rem;
+        min-width: 21rem;
+        justify-content: center;
+        transition: var(--theme-transition);
+        position: relative;
+        z-index: 1;
+        &:first-child {
+          color: #fff;
+          background-color: #009688;
+          border-color: #009688;;
+          @include tab-min {
+            margin-right: 2.5rem;
+          }
+          .il_btn_icon {
+            display: none;
+          }
+        }
+        &:last-child {
+          color: #041B4F;
+          background: rgba(255, 255, 255, 0.58);
+          border-color: #009688;
+          display: flex;
+          @include desk-min {
+            &::after {
+              content: "";
+              position: absolute;
+              width: calc(100% + 6px);
+              left: -3px;
+              height: calc(100% + 6px);
+              pointer-events: none;
+              opacity: 0;
+              background: linear-gradient(104deg, transparent 94%, #009688 94%);
             }
-            &:nth-child(2) {
-              background: #fff;
-              font-size: 17px;
+          }
+          .il_btn_icon {
+            align-items: center;
+            margin-left: 1rem;
+            @include mob-only {
+              margin-left: 10px;
+            }
+            svg {
+              height: 2.6rem;
+              @include mob-only {
+                height: 26px;
+              }
+            }
+          }
+          &:hover {
+            .il_btn_icon {
+              margin-right: 0;
             }
           }
         }
-    }
-    .il_btn {
-      padding: 1rem 2.2rem;
-      border: 3px solid;
-      font-size: 2rem;
-      min-width: 21rem;
-      justify-content: center;
-      transition: var(--theme-transition);
-      position: relative;
-      z-index: 1;
-      &:first-child {
-        color: #fff;
-        background-color: #009688;
-        border-color: #009688;;
-        @include tab-min {
-          margin-right: 2.5rem;
-        }
-      }
-      &:last-child {
-        color: #041B4F;
-        background: rgba(255, 255, 255, 0.58);
-        border-color: #009688;
         @include desk-min {
-          &::after {
-            content: "";
-            position: absolute;
-            width: calc(100% + 6px);
-            left: -3px;
-            height: calc(100% + 6px);
-            pointer-events: none;
-            opacity: 0;
-            background: linear-gradient(104deg, transparent 94%, #009688 94%);
+          &:hover {
+            clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+            &::after {
+              opacity: 1;
+            }
           }
         }
-      }
-      @include desk-min {
-        &:hover {
-          clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
-          &::after {
-            opacity: 1;
-          }
+        @include limbo-max {
+          font-size: 15px;
+          padding: 10px 4rem;
         }
-      }
-      .il_btn_text {
-        z-index: 2;
-      }
-      .il_btn_icon {
-        display: none;
+        @include mob-only {
+          font-size: 17px;
+          min-width: 100%;
+          text-align: center;
+          display: inline-block;
+          margin: 0 auto 0 0;
+        }
+        .il_btn_text {
+          z-index: 2;
+        }
       }
     }
   }
@@ -121,7 +136,7 @@
 
   &.full-screen {
     @include tab-max {
-      min-height: calc(73vh - 16rem);
+      min-height: 530px;
     }
     @include limbo-only {
       min-height: calc(50vh - 16rem);

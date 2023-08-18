@@ -68,7 +68,7 @@ if ( ! empty( $block['className'] ) ) {
 					<div id="ilMember_<?php echo $rand_id; ?>" class="member_text member_text_<?php echo $item; ?>">
 						<div class="member_text_inner">
 						<span class="close"><svg id="x" xmlns="http://www.w3.org/2000/svg" width="17.659" height="17.659" viewBox="0 0 17.659 17.659"><g id="Group_195" data-name="Group 195"><path id="Path_319" data-name="Path 319" d="M10.3,8.834l7.056-7.056A1.039,1.039,0,0,0,15.886.309L8.83,7.365,1.773.309A1.039,1.039,0,0,0,.3,1.777L7.361,8.834.3,15.89a1.039,1.039,0,1,0,1.469,1.469L8.83,10.3l7.056,7.056a1.039,1.039,0,0,0,1.469-1.469Z" transform="translate(0 -0.004)" fill="#fff"/></g></svg></span>
-							<h2 class="member_box_name tg_title_1 tg_light"><?php echo $name; ?></h2>
+							<h2 class="member_box_name tg_title_1 tg_light"><?php echo $name; ?> <span><?php echo $position; ?></span></h2>
 							<div class="member_description"><?php echo $description; ?></div>
 						</div>
 					</div>
