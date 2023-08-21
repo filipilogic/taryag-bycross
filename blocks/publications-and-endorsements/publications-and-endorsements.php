@@ -69,13 +69,6 @@ if ( ! empty( $padding) ) {
                         'posts_per_page' => 8
                     );
                     $wp_query = new WP_Query( $args );
-
-                    $count_posts =  $wp_query->found_posts;
-                    $postLimit = intval($countPosts) + 4;
-                
-                    if($postLimit >= intval($count_posts)){
-                        echo '<style>.ilLoadMore{display:none !important;}</style>';
-                    }
                     
                     get_template_part('components/intro');
 
