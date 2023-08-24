@@ -153,9 +153,20 @@
 }
 
 .contact-us-hero {
+    .il_inner_hero_bg img {
+        @include desk-min {
+            width: 50%;
+            object-position: top;
+        }
+    }
     .il_inner_hero_inner_bottom {
+        @include tab-max {
+            padding-top: 7rem;
+        }
         .il_inner_hero_inner_bottom_content {
-            margin-top: -5rem;
+            @include limbo-min {
+                margin-top: -5rem;
+            }
             input:not(.wpcf7-submit), select, textarea {
                 width: 70%;
                 @include mob-only {
@@ -182,6 +193,12 @@
             }
             .tg_title_1 {
                 margin-bottom: 6.5rem;
+            }
+            .custom-cf7-title-space {
+                @include limbo-min {
+                    margin-top: 6rem;
+                    margin-bottom: 18rem;
+                }
             }
         }
     }

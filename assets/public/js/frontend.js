@@ -218,6 +218,19 @@ function scrollFunction() {
     document.getElementById("backToTopButton").style.opacity = "0";
   }
 }
+document.addEventListener('wpcf7mailsent', function (event) {
+  // Change the content of cf7 homepage intro text after submit
+  var introText = document.querySelector('.home-contact-us .il_section_content');
+  if (introText) {
+    introText.innerHTML = '<h2 class="il_section_title tg_title_1 " style="color: #041b4f;">Thank you for your message</h2>';
+  }
+
+  // Change the content of cf7 contact page intro text after submit
+  var introText = document.querySelector('.contact-us-hero .il_inner_hero_inner_bottom_content');
+  if (introText) {
+    introText.innerHTML = '<h2 class="il_inner_hero_inner_bottom_title tg_title_1 custom-cf7-title-space">Thank you for your message</h2>';
+  }
+}, false);
 
 /***/ }),
 

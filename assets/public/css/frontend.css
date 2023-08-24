@@ -1100,8 +1100,22 @@ figure img {
   }
 }
 
-.contact-us-hero .il_inner_hero_inner_bottom .il_inner_hero_inner_bottom_content {
-  margin-top: -5rem;
+@media (min-width: 1199.6px) {
+  .contact-us-hero .il_inner_hero_bg img {
+    width: 50%;
+    -o-object-position: top;
+       object-position: top;
+  }
+}
+@media (max-width: 797.5px) {
+  .contact-us-hero .il_inner_hero_inner_bottom {
+    padding-top: 7rem;
+  }
+}
+@media (min-width: 797.6px) {
+  .contact-us-hero .il_inner_hero_inner_bottom .il_inner_hero_inner_bottom_content {
+    margin-top: -5rem;
+  }
 }
 .contact-us-hero .il_inner_hero_inner_bottom .il_inner_hero_inner_bottom_content input:not(.wpcf7-submit), .contact-us-hero .il_inner_hero_inner_bottom .il_inner_hero_inner_bottom_content select, .contact-us-hero .il_inner_hero_inner_bottom .il_inner_hero_inner_bottom_content textarea {
   width: 70%;
@@ -1143,6 +1157,12 @@ figure img {
 }
 .contact-us-hero .il_inner_hero_inner_bottom .il_inner_hero_inner_bottom_content .tg_title_1 {
   margin-bottom: 6.5rem;
+}
+@media (min-width: 797.6px) {
+  .contact-us-hero .il_inner_hero_inner_bottom .il_inner_hero_inner_bottom_content .custom-cf7-title-space {
+    margin-top: 6rem;
+    margin-bottom: 18rem;
+  }
 }
 
 @media (min-width: 797.6px) {
