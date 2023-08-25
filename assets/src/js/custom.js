@@ -231,7 +231,7 @@ document.addEventListener('wpcf7mailsent', function(event) {
     // Change the content of cf7 homepage intro text after submit
     var introText = document.querySelector('.home-contact-us .il_section_content');
     if (introText) {
-        introText.innerHTML = '<h2 class="il_section_title tg_title_1 " style="color: #041b4f;">Thank you for your message</h2>';
+        introText.innerHTML = '<h2 class="il_section_title tg_title_1 custom-cf7-title-space" style="color: #041b4f;">Thank you<br> for your message</h2>';
     }
 	
     // Change the content of cf7 contact page intro text after submit

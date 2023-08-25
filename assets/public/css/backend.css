@@ -2209,6 +2209,12 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   padding-bottom: 18.45rem;
   background: #fff;
 }
+@media (min-width: 797.6px) {
+  .il_section.home-contact-us .custom-cf7-title-space {
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+  }
+}
 
 @media (min-width: 1199.6px) {
   .il_block.il_simple-list {
