@@ -20,7 +20,7 @@ if ( ! empty( $padding) ) {
                         $args = array(
                             'post_type' => 'publication',
                             'post_status' => 'publish',
-                            'posts_per_page' => 1
+                            'posts_per_page' => 2
                         );
                         $posts = new WP_Query( $args );
                         

@@ -30,7 +30,8 @@
                 }
                 .il_pe_title {
                     color: var(--color-1);
-                    h2 {
+                    @include desk-min {
+                        font-size: 4rem;
                         margin-bottom: 3rem;
                     }
                 }

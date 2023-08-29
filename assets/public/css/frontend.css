@@ -4898,8 +4898,11 @@ textarea {
 .il_publications-and-endorsements .il_publications .il_publication .il_pe_left .il_pe_title {
   color: var(--color-1);
 }
-.il_publications-and-endorsements .il_publications .il_publication .il_pe_left .il_pe_title h2 {
-  margin-bottom: 3rem;
+@media (min-width: 1199.6px) {
+  .il_publications-and-endorsements .il_publications .il_publication .il_pe_left .il_pe_title {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
 }
 .il_publications-and-endorsements .il_publications .il_publication .il_pe_left .date {
   background-color: #F3F3F3;
