@@ -1751,6 +1751,18 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
   padding-bottom: 10.4rem;
   overflow: hidden;
 }
+.il_section.style-2.solution-section .il_buttons {
+  margin-top: 5rem;
+  display: flex;
+}
+@media (max-width: 479.5px) {
+  .il_section.style-2.solution-section .il_buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 4.6rem;
+  }
+}
 @media (max-width: 479.5px) {
   .il_section.style-2.solution-section .il_buttons .il_btn:first-child {
     margin-bottom: 2rem;
