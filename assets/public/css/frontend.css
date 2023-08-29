@@ -4863,6 +4863,8 @@ textarea {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10.5rem;
+}
+.il_publications-and-endorsements .il_publications .il_publication:last-child {
   border-bottom: 1px solid #707070;
 }
 @media (max-width: 479.5px) {

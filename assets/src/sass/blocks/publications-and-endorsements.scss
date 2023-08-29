@@ -4,7 +4,9 @@
             display: flex;
             justify-content: space-between;
             padding-bottom: 10.5rem;
-            border-bottom: 1px solid #707070;
+            &:last-child {
+                border-bottom: 1px solid #707070;
+            }
             @include mob-only {
                 margin-bottom: 11rem;
             }
