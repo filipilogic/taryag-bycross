@@ -1407,6 +1407,7 @@ a.il_btn:not(:last-child), a.il_btn:not(:only-child) {
 @media (min-width: 1199.6px) {
   .il_publications-and-endorsements .il_publications .il_publication .il_pe_left .il_pe_title {
     font-size: 3.6rem;
+    line-height: 1.4;
     margin-bottom: 3rem;
   }
 }
